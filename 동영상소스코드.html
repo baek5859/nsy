@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>동영상 소스코드</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <style media="screen">
+     a {
+      color: #000000;
+      text-decoration: none;
+     }
+     a:hover {   /*hover 마우스가 올라갓을때*/
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+     }
+     /*네비게이션 영역*/
+     .navbar-default { /*배경색상*/
+        background-color: #000000;
+        border-color: #000000;
+     }
+     .navbar-default .navbar-brand {         /*내배게이션 제목 새상*/
+        color: #ffffff;
+     }
+     .navbar-default .navbar-brand:hover,
+     .navbar-default .navbar-brand:focus {  /*내비게이션 제목에 마우스를 올렸을때*/
+       background-color: transparent;
+       color: #bbbbbb;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus{  /*현재 선택된 내비게이션 소개라는글 색상 이벤트*/
+       color: white;
+      background-color: #000000;
+     }
+     .navbar-default .navbar-nav > li> a:hover,
+     .navbar-default .navbar-nav > li> a:focus{
+        color: blue;
+     }
+     .navbar-default .navbar-nav > .open > a,
+     .navbar-default .navbar-nav > .open > a:hover,
+     .navbar-default .navbar-nav > .open > a:focus {  /* 네비게이션 드랍다운 열렸을때 색상*/
+        color: #000000;
+        background-color: #ffffff;
+        text-decoration: none;
+     }
+     .navbar-default .navbar-nav > li >a { /*내비게이션 색상*/
+        color: white;
+     }
+
+  </style>
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">GALAXY LIFESTYLE</a>
+    </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="store.html">매장찾아오시는길</a></li>
+        <li><a href="#">매장신상품소개</a></li>
+        <li><a href="#">단골고객님소개</a></li>
+        <!-- 드롭바 -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+             aria-haspopup="true" aria-expanded="false">게시판<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">남여 궁합</a></li>
+              <li><a href="#">꿈 해몽</a></li>
+              <li><a href="#">미정</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">나의 매장 자랑하기<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">직원소개</a></li>
+                  <li><a href="#">매장소개</a></li>
+                  <li><a href="#">옷관리</a></li>
+              </ul>
+          </li>
+      </ul>
+      <!-- 드롭바 끝-->
+      <!-- 검색창 -->
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="내용을 입력하세요.">
+       </div>
+       <button type="submit" class="btn btn-default">검색</button>
+      </form>
+        <!-- 검색창 -->
+        <!-- 우측드롭바 -->
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+         aria-haspopup="true" aria-expanded="false">접속하기<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+       </li>
+      </ul>
+      <!-- 우측드롭바끝 -->
+
+  </div>
+  </nav>
+  <!-- 네비게이션 바 끝-->
+  <div class="container">
+    <div class="row">
+      <ul class="list-group">
+        <a href="#" class="list-group-item active">소영이동영상</a>
+        <a href="#" class="list-group-item">별동영상</a>
+        <a href="#" class="list-group-item">오남기동영상</a>
+        <a href="#" class="list-group-item">새해인사</a>
+     </ul>
+    </div>
+
+  <div class="row">
+   <div class="embed-responsive embed-responsive-16by9">
+     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HVfUrnM0-yc"></iframe>
+   </div>
+   <hr>
+   <div class="row" style="text-align:left">
+   <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;우리딸 어렷을때</p>
+   <pre class="pre-scrollable">
+     아따 귀엽네
+   </pre>
+   </div>
+   </div>
+
+   <div class="row">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DPoSZgtsXHs"></iframe>
+    </div>
+    <hr>
+    <div class="row" style="text-align:left">
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;울별</p>
+    <pre class="pre-scrollable">
+      아따 귀엽네
+    </pre>
+    </div>
+    </div>
+
+   <div class="row">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YzOzRTbqz7o"></iframe>
+    </div>
+    <hr>
+    <div class="row" style="text-align:left">
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;졸하 잘묵음</p>
+    <pre class="pre-scrollable">
+      바보
+    </pre>
+    </div>
+
+    <div class="row">
+     <div class="embed-responsive embed-responsive-16by9">
+       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iIEUtMaMd9U"></iframe>
+     </div>
+     <hr>
+     <div class="row" style="text-align:left">
+     <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;복많이 받으세요.</p>
+     <pre class="pre-scrollable">
+      새해복많이 받으세요
+     </pre>
+     </div>
+
+    </div>
+
+   </div>
+
+<!-- 하단글 만들기 -->
+<footer style="background-color:#000000;color:#ffffff">
+    <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-sm-2" style="text-align:left"><h5>copyright &copy;2020</h5><h5>나병우(boungwoo Na)</h5></div>
+          <div class="col-sm-4" style="text-align:left"><h4>Shopmaster: 나병우</h4><p>저는 항상 긍정적인 마인드를 가진분을 좋아합니다.
+                                    <p>카카오톡 아이디 : nabwoo </P><p>▣ 휴대폰 010-3619-6673 </P><p>Email: nabwoo@nate.com</P></div>
+        <div class="col-sm-2"><h4 style="text-align:center;">백화점 Edi</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item">롯데백화점</a>
+              <a href="#" class="list-group-item">신세계백화점</a>
+              <a href="#" class="list-group-item">현대백화점</a>
+            </div>
+        </div>
+        <div class="col-sm-2"><h4 style="text-align:center;">SNS</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item">페이스북</a>
+              <a href="#" class="list-group-item">네이버</a>
+              <a href="#" class="list-group-item">유투브</a>
+            </div>
+        </div>
+            <!-- 누렸을때 주소나오게 하는것 -->
+            <a href="#demo" class="btn btn-info" data-toggle="collapse">매장주소</a>
+            <div id="demo" class="collapse">
+              <br><p>광주시 동구  독립로 268 롯데백화점 7층 갤럭시캐쥬얼</p><p> ☎ 062 221 1551</P><p> ■ Shopmaster:나 병우</P>
+            </div>
+
+                   <!--&cpoy 기호 붙은거 &nbsp 한칸 띠우는것   glyphicon glyphicon-ok(이것은 아이콘옆에 달린거)-->
+        <!-- <div class="col-sm-2"><h4 style="text-align:center;"><span class="glyphicon glyphicon-ok">&nbsp;나병우</h4></span></div> -->
+     </div>
+   </div>
+</footer>
+<!-- 하단 만들기 끝 -->
+<!-- 모달 알림창 만들기 -->
+</body>
+</html>
